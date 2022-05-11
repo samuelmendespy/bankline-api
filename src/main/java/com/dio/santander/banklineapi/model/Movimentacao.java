@@ -18,17 +18,24 @@ public class Movimentacao {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "dt_hora")
+	@Column(name = "data_hora")
 	private LocalDateTime dataHora;
 	
 	private String descricao;
 	
-	// Diz para salvar o próprio valor literal
-	// Se a movimentacao é receita tera uma coluna receita
-	// Se a movimentacao é despesa tera uma coluna despesa
-	@Enumerated(EnumType.STRING)
+	
 	private Double valor;
+	
+	// Diz para salvar o próprio String literal
+		// Se a movimentacao é receita tera uma coluna receita
+		// Se a movimentacao é despesa tera uma coluna despesa
+		
+	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
+	
+	@Column(name = "id_conta")
+	private Integer idConta;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -58,6 +65,12 @@ public class Movimentacao {
 	}
 	public void setTipo(MovimentacaoTipo tipo) {
 		this.tipo = tipo;
+	}
+	public Integer getIdConta() {
+		return idConta;
+	}
+	public void setIdConta(Integer idConta) {
+		this.idConta = idConta;
 	}
 	
 
