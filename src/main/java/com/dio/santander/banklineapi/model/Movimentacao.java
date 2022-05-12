@@ -23,7 +23,6 @@ public class Movimentacao {
 	
 	private String descricao;
 	
-	
 	private Double valor;
 	
 	// Diz para salvar o próprio String literal
