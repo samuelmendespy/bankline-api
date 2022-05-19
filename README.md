@@ -1,5 +1,5 @@
 # bankline-api
-Projeto iniciado em Maio de 2022 durante a Santander Dev Week. Desenvolvido com Java SE 11, Maven, Spring Boot e outras tecnologias. Entre elas, PostgreSQL e Swagger. A versão ativa em servidor pode ser acessada em  <http://shblineapi.herokuapp.com>
+Projeto iniciado em Maio de 2022 durante a Santander Dev Week. Desenvolvido com Java SE 11, Maven, Spring Boot e outras tecnologias. Entre elas, PostgreSQL e Swagger. A versão ativa em servidor pode ser acessada em  <https://shblineapi.herokuapp.com/swagger-ui/index.html>
 
 ## Funcionalidades
 - Fornece um serviço de cadastro e registro de movimentações em aplicação de servidor para atividades da aplicação [SH BanklineApp](https://github.com/pysmendes/bankline-app).
